@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <div class="container">
+            <div id = "cabeça"><img src="imagens/OIP.jpeg" alt="ícone de lista telefônica"><h1>Sua agendinha online</h1></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>nome</th>
+                        <th>telefone</th>
+                        <th>status</th>
+                    </tr>
+                </thead>
+                <tbody id = "tbody">
+                    <tr>
+                        <td>padrão sugerido: Nome + um dos sobrenomes</td>
+                        <td>(DDD)12345-6789</td>
+                        <td style = "display:flex; justify-content: space-evenly; align-items: center; color: #78A75A; ">Salvo</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr id="first-divider"/>
+            
+            <h2>Detalhes do contato a ser adicionado</h2>
+            <form>
+            <label for = "name">
+                <p>nome</p>
+                <input type="text" name="name-input" id="nome" placeholder = " ex.: Hélio Luguro" required >
+            </label>
+            <label for = "tel">
+                <p>número de telefone</p>
+                <input type="tel" name="tel-input" id="telefon" placeholder = " ex.: (21) 12345-6789" required >
+            </label>
+                <button type="submit">adicionar</button>
+            </form>
+        </div>
+    </main>
+    <script src ="script.js"></script>
+</body>
+</html>
